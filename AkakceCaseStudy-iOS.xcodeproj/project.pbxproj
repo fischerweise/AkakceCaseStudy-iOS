@@ -6,12 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E2EE26BF2DA5A393004BFE9B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E2EE26BE2DA5A393004BFE9B /* SDWebImage */; };
+		E2EE26C12DA5A393004BFE9B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2EE26C02DA5A393004BFE9B /* SDWebImageMapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E2EE26922DA59FA4004BFE9B /* AkakceCaseStudy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AkakceCaseStudy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E2EE26A42DA59FA5004BFE9B /* Exceptions for "AkakceCaseStudy-iOS" folder in "AkakceCaseStudy-iOS" target */ = {
+		E2EE26C82DA66534004BFE9B /* Exceptions for "AkakceCaseStudy-iOS" folder in "AkakceCaseStudy-iOS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +29,7 @@
 		E2EE26942DA59FA4004BFE9B /* AkakceCaseStudy-iOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				E2EE26A42DA59FA5004BFE9B /* Exceptions for "AkakceCaseStudy-iOS" folder in "AkakceCaseStudy-iOS" target */,
+				E2EE26C82DA66534004BFE9B /* Exceptions for "AkakceCaseStudy-iOS" folder in "AkakceCaseStudy-iOS" target */,
 			);
 			path = "AkakceCaseStudy-iOS";
 			sourceTree = "<group>";
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EE26C12DA5A393004BFE9B /* SDWebImageMapKit in Frameworks */,
+				E2EE26BF2DA5A393004BFE9B /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = "AkakceCaseStudy-iOS";
 			packageProductDependencies = (
+				E2EE26BE2DA5A393004BFE9B /* SDWebImage */,
+				E2EE26C02DA5A393004BFE9B /* SDWebImageMapKit */,
 			);
 			productName = "AkakceCaseStudy-iOS";
 			productReference = E2EE26922DA59FA4004BFE9B /* AkakceCaseStudy-iOS.app */;
@@ -107,6 +116,9 @@
 			);
 			mainGroup = E2EE26892DA59FA4004BFE9B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E2EE26BD2DA5A393004BFE9B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E2EE26932DA59FA4004BFE9B /* Products */;
 			projectDirPath = "";
@@ -335,6 +347,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2EE26BD2DA5A393004BFE9B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2EE26BE2DA5A393004BFE9B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2EE26BD2DA5A393004BFE9B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		E2EE26C02DA5A393004BFE9B /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2EE26BD2DA5A393004BFE9B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E2EE268A2DA59FA4004BFE9B /* Project object */;
 }
